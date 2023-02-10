@@ -11,7 +11,7 @@ public class TriangularNumbersCalculator {
         }
     }
 
-    private static int getNumberFromUser(String mess) throws EmptyLineToCancelException{
+    public static int getNumberFromUser(String mess) throws EmptyLineToCancelException{
         Scanner input = new Scanner(System.in);
         int number = -1;
         do{
