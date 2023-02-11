@@ -1,18 +1,29 @@
 import java.util.Scanner;
 
 public class TriangularNumbersCalculator {
-    public static void main(String[] args){
 
-        try{
-            int number = getNumberFromUser("Enter a non-negative integer or empty line to cancel: ");
-            System.out.println("Result = " + String.valueOf(calculate(number)));
-        } catch (EmptyLineToCancelException e){
-            System.out.println("Canceled");
+    public static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args){
+        startTriangularNumbersCalculator();
+
+    }
+
+    public static void startTriangularNumbersCalculator(){
+        while (true){
+            try{
+                int number = getNumberFromUser("Enter a non-negative integer or empty line to cancel: ");
+                System.out.println("Result = " + calculate(number));
+            } catch (EmptyLineToCancelException e){
+                System.out.println("Canceled");
+                input.close();
+                break;
+            }
         }
+
     }
 
     public static int getNumberFromUser(String mess) throws EmptyLineToCancelException{
-        Scanner input = new Scanner(System.in);
         int number = -1;
         do{
             System.out.print(mess);
@@ -31,8 +42,6 @@ public class TriangularNumbersCalculator {
                 System.out.println("Not an integer");
             }
         } while (number < 0);
-
-        input.close();
 
         return number;
     }
