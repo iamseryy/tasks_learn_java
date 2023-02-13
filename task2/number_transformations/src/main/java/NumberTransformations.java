@@ -28,7 +28,7 @@ public class NumberTransformations {
                 operations.add(new Operation(operateMult, multNumber, DescriptionOperation.MULTIPLICATION));
                 operations.add(new Operation(operateAdd, addNumber, DescriptionOperation.ADDITION));
 
-                System.out.println("\nFinded Solutions:");
+                System.out.println("\nFound Solutions:");
                 commandsListSets.clear();
                 var solutions = new HashSet<Solution<Double>>();
                 solutions.add(new Solution(new ArrayList<Operation<Double>>(), sourceNumber));
