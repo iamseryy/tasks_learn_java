@@ -2,9 +2,9 @@ import java.util.List;
 
 public class Solution <T extends Number>{
     private List<Operation<T>> operations;
-    private Integer result;
+    private T result;
 
-    public Solution(List<Operation<T>> operations, Integer result) {
+    public Solution(List<Operation<T>> operations, T result) {
         this.operations = operations;
         this.result = result;
     }
@@ -13,7 +13,7 @@ public class Solution <T extends Number>{
         return operations;
     }
 
-    public Integer getResult() {
+    public T getResult() {
         return result;
     }
 
@@ -21,7 +21,7 @@ public class Solution <T extends Number>{
         this.operations = operations;
     }
 
-    public void setResult(Integer result) {
+    public void setResult(T result) {
         this.result = result;
     }
 }
