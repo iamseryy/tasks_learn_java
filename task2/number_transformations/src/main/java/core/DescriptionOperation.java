@@ -1,3 +1,5 @@
+package core;
+
 public enum DescriptionOperation {
     ADDITION("K2"),
     MULTIPLICATION("K1");

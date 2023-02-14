@@ -1,3 +1,5 @@
+package core;
+
 public class Operation <T extends Number>{
     private Operate<T> operate;
     private T operateParam;
