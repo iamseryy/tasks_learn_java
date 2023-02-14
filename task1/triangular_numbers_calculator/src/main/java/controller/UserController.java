@@ -1,19 +1,19 @@
+package controller;
+
+import exception.EmptyLineToCancelException;
+import utils.Mathematics;
+
 import java.util.Scanner;
 
-public class TriangularNumbersCalculator {
+public class UserController {
 
-    public static Scanner input = new Scanner(System.in);
+    private static Scanner input = new Scanner(System.in);
 
-    public static void main(String[] args){
-        startTriangularNumbersCalculator();
-
-    }
-
-    public static void startTriangularNumbersCalculator(){
+    public static void start(){
         while (true){
             try{
                 int number = getNumberFromUser("Enter a non-negative integer or empty line to cancel: ");
-                System.out.println("Result = " + calculate(number));
+                System.out.println("Result = " + Mathematics.triangularNumber(number));
             } catch (EmptyLineToCancelException e){
                 System.out.println("Canceled");
                 input.close();
@@ -23,7 +23,7 @@ public class TriangularNumbersCalculator {
 
     }
 
-    public static int getNumberFromUser(String mess) throws EmptyLineToCancelException{
+    private static int getNumberFromUser(String mess) throws EmptyLineToCancelException{
         int number = -1;
         do{
             System.out.print(mess);
@@ -44,15 +44,5 @@ public class TriangularNumbersCalculator {
         } while (number < 0);
 
         return number;
-    }
-
-    public static int calculate(int number){
-        return number * (number + 1) / 2;
-    }
-
-    public static class EmptyLineToCancelException extends Exception {
-        public EmptyLineToCancelException (String message) {
-            super(message);
-        }
     }
 }
