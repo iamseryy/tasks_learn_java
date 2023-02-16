@@ -1,6 +1,7 @@
 package util;
 
 public class Mathematics {
+
     public static double pow(double number, int pow){
         Double result = 1.0;
 

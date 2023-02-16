@@ -1,8 +1,8 @@
-import controller.NumbersFile;
-import util.Mathematics;
+import controller.AppController;
+
 
 public class PowApplication {
     public static void main(String[] args) {
-        NumbersFile.getNumber();
+        AppController.start();
     }
 }
