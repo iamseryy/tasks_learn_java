@@ -16,7 +16,12 @@ public class AppController {
         persons.add(new Person(27, "Arina", "Abramova"));
         persons.add(new Person(31, "Alice", "Anikina"));
 
+        System.out.println("Origin lists");
         System.out.println(persons.toString());
+        System.out.println("Sorted by age");
+        SortUtils.mergeSort(persons, (person1, person2) -> person1.age() - person2.age());
+        System.out.println(persons.toString());
+        System.out.println("Sorted by surname");
         SortUtils.mergeSort(persons, (person1, person2) -> person1.surname().compareTo(person2.surname()));
         System.out.println(persons.toString());
     }
