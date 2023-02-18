@@ -4,25 +4,29 @@ import model.Person;
 import util.SortUtils;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+
 
 public class AppController {
     public static void start(){
         var persons = new ArrayList<Person>();
-        persons.add(new Person(27, "Nikita", "Petriov"));
+        persons.add(new Person(27, "Nikita", "Abramov"));
         persons.add(new Person(18, "Olga", "Nikitina"));
         persons.add(new Person(25, "Ivan", "Semenov"));
         persons.add(new Person(19, "Irina", "Romanova"));
         persons.add(new Person(29, "Mihail", "Kiselev"));
-        persons.add(new Person(27, "Arina", "Abramova"));
+        persons.add(new Person(27, "Arina", "Petriova"));
         persons.add(new Person(31, "Alice", "Anikina"));
 
-        System.out.println("Origin lists");
+        System.out.println("Origin list");
         System.out.println(persons.toString());
-        System.out.println("Sorted by age");
-        SortUtils.mergeSort(persons, (person1, person2) -> person1.age() - person2.age());
+
+        System.out.println("\nSorted by name");
+        SortUtils.mergeSort(persons, Comparator.comparing(Person::name));
         System.out.println(persons.toString());
-        System.out.println("Sorted by surname");
-        SortUtils.mergeSort(persons, (person1, person2) -> person1.surname().compareTo(person2.surname()));
+
+        System.out.println("\nSorted by age, then by surname");
+        SortUtils.mergeSort(persons, Comparator.comparing(Person::age).thenComparing(Person::surname));
         System.out.println(persons.toString());
     }
 }
