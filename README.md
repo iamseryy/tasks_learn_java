@@ -5,3 +5,4 @@
 |2|**[Task2](https://github.com/iamseryy/tasks_learn_java/tree/main/task2)**|Converting one number to another using commands|
 |3|**[Task3](https://github.com/iamseryy/tasks_learn_java/tree/main/task3)**|Raising number to power|
 |4|**[Task4](https://github.com/iamseryy/tasks_learn_java/tree/main/task4)**|Merge sort|
+|5|**[Task5](https://github.com/iamseryy/tasks_learn_java/tree/main/task5)**|Heap sort|
