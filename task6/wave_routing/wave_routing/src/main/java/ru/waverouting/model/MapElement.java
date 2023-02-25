@@ -4,8 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum MapElement {
-    FREE_SPACE("  ", 0),
-    WALL("▓▓", -1);
+    FREE_SPACE(" ", 0),
+    WALL("▓", -1),
+    CAT("C", -10),
+    EXIT("E", -100);
 
     private static final Map<String, MapElement> BY_ICON = new HashMap<>();
     private static final Map<Integer, MapElement> BY_VALUE = new HashMap<>();
@@ -25,11 +27,11 @@ public enum MapElement {
         this.value = value;
     }
 
-    public static MapElement valueOfLabel(String icon) {
+    public static MapElement valueOfIcon(String icon) {
         return BY_ICON.get(icon);
     }
 
-    public static MapElement valueOfAtomicNumber(int value) {
+    public static MapElement valueOfValue(int value) {
         return BY_VALUE.get(value);
     }
 }
