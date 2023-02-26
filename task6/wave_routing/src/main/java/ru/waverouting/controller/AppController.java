@@ -20,13 +20,11 @@ public class AppController {
                 .collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue().value));
 
         spreadWave(searchMap);
-
-        buildRoute(searchMap, map);
-
+        buildRoute(findNearestPoint(searchMap), searchMap, map);
         printMap(map);
     }
 
-    private static void buildRoute(Map<Point, Integer> searchMap, HashMap<Point, MapElement> map) {
+    private static Point findNearestPoint(Map<Point, Integer> searchMap) {
         var exitPoints = new HashSet<Point>(searchMap.entrySet().stream()
                 .filter(e-> e.getValue() == MapElement.EXIT.value)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue))
@@ -59,11 +57,15 @@ public class AppController {
             }
         }
 
-        Point routePoint = Collections.min(exitMap.entrySet(), Map.Entry.comparingByValue()).getKey();
+        return Collections.min(exitMap.entrySet(), Map.Entry.comparingByValue()).getKey();
+    }
+
+    private static void buildRoute(Point routePoint, Map<Point, Integer> searchMap, HashMap<Point, MapElement> map) {
         map.put(routePoint, MapElement.WAY);
         int routeValue = searchMap.get(routePoint);
+        Point nextRoutePoint;
         while (routeValue > 0){
-            Point nextRoutePoint = new Point(routePoint.x(), routePoint.y() + 1);
+            nextRoutePoint = new Point(routePoint.x(), routePoint.y() + 1);
             if(searchMap.get(nextRoutePoint) == routeValue - 1){
                 routePoint = nextRoutePoint;
                 map.put(routePoint, MapElement.WAY);
@@ -172,18 +174,6 @@ public class AppController {
                 System.out.println();
             }
             System.out.print(entry.getValue().icon);
-        }
-    }
-
-    private static void printSearchMap(Map<Point, Integer> map){
-        TreeMap<Point, Integer> sortedMap = new TreeMap<>(map);
-        int y = 0;
-        for (Map.Entry<Point, Integer> entry : sortedMap.entrySet()) {
-            if (entry.getKey().y() > y){
-                y++;
-                System.out.println();
-            }
-            System.out.print(" " + entry.getValue() + " ");
         }
     }
 }

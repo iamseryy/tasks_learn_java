@@ -8,24 +8,10 @@
       <change beforePath="$PROJECT_DIR$/../../task2/number_transformations/src/main/java/core/DescriptionOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task2/number_transformations/src/main/java/core/DescriptionOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../task5/heap_sort/src/main/java/ru/heapsort/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task5/heap_sort/src/main/java/ru/heapsort/controller/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../task5/heap_sort/src/main/java/ru/heapsort/utils/SortUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task5/heap_sort/src/main/java/ru/heapsort/utils/SortUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/src/main/java/ru/waverouting/WaveRoutingApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/src/main/java/ru/waverouting/config/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/src/main/java/ru/waverouting/controller/AppController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/src/main/java/ru/waverouting/model/MapElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/src/main/java/ru/waverouting/model/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/src/main/resources/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/src/main/resources/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/src/test/java/ru/waverouting/WaveRoutingAppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/target/classes/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wave_routing/target/classes/map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/waverouting/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/waverouting/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/map.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,22 +86,11 @@
       <option name="presentableId" value="Default" />
       <updated>1677307968919</updated>
       <workItem from="1677307970188" duration="37676000" />
-      <workItem from="1677428630590" duration="120000" />
+      <workItem from="1677428630590" duration="1451000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/waverouting/controller/AppController.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
