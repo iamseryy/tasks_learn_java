@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 
 public class AppController {
     public static void start(){
+//TODO:1. выход перед кошкой; 2. вызоды вокруг кошки; 3. нет доступных выходов
+
         var map = getMap();
 
         var searchMap = new HashMap<Point, MapElement>(map)
