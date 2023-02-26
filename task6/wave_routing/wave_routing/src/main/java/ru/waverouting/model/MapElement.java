@@ -6,8 +6,9 @@ import java.util.Map;
 public enum MapElement {
     FREE_SPACE(" ", 0),
     WALL("▓", -1),
-    CAT("C", -10),
-    EXIT("E", -100);
+    CAT("C", -2),
+    WAY("*", -3),
+    EXIT("E", -4);
 
     private static final Map<String, MapElement> BY_ICON = new HashMap<>();
     private static final Map<Integer, MapElement> BY_VALUE = new HashMap<>();
