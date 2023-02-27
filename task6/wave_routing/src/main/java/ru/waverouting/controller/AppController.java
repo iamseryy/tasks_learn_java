@@ -1,6 +1,5 @@
 package ru.waverouting.controller;
 
-import org.w3c.dom.ls.LSOutput;
 import ru.waverouting.config.AppConfig;
 import ru.waverouting.model.MapElement;
 import ru.waverouting.model.Point;

@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/../../task2/number_transformations/src/main/java/core/DescriptionOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task2/number_transformations/src/main/java/core/DescriptionOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../task5/heap_sort/src/main/java/ru/heapsort/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task5/heap_sort/src/main/java/ru/heapsort/controller/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../task5/heap_sort/src/main/java/ru/heapsort/utils/SortUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task5/heap_sort/src/main/java/ru/heapsort/utils/SortUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/waverouting/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/waverouting/controller/AppController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,25 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/gb/016_Знакомство с языком программирования Java/seminars/tasks/tasks_learn_java/task6/wave_routing",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/gb/016_Знакомство с языком программирования Java/seminars/tasks/tasks_learn_java/task6/wave_routing&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.waverouting.WaveRoutingApp" />
@@ -83,6 +84,7 @@
       <updated>1677307968919</updated>
       <workItem from="1677307970188" duration="37676000" />
       <workItem from="1677428630590" duration="2718000" />
+      <workItem from="1677515965492" duration="324000" />
     </task>
     <servers />
   </component>
