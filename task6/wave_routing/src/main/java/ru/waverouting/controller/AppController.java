@@ -1,5 +1,6 @@
 package ru.waverouting.controller;
 
+import org.w3c.dom.ls.LSOutput;
 import ru.waverouting.config.AppConfig;
 import ru.waverouting.model.MapElement;
 import ru.waverouting.model.Point;
@@ -13,8 +14,6 @@ import java.util.stream.Collectors;
 
 public class AppController {
     public static void start(){
-//TODO:1. выход перед кошкой; 2. вызоды вокруг кошки; 3. нет доступных выходов
-
         var map = getMap();
 
         var searchMap = new HashMap<Point, MapElement>(map)
@@ -22,8 +21,14 @@ public class AppController {
                 .stream()
                 .collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue().value));
 
-        AppService.spreadWave(searchMap);
-        AppService.buildRoute(AppService.findNearestPoint(searchMap), searchMap, map);
+        if (!AppService.checkExitNearby(searchMap)){
+            AppService.spreadWave(searchMap);
+            Optional<Point> nearestExitPoint = AppService.findNearestExitPoint(searchMap);
+            nearestExitPoint.ifPresentOrElse(point -> AppService.buildRoute(point, searchMap, map),
+                                                () -> System.out.println("\nNo way out of the maze!"));
+        }
+
+        System.out.println();
         printMap(map);
     }
 
