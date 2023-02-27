@@ -76,6 +76,7 @@ public class AppService {
             pointSet.remove(currentPoint);
         }
     }
+
     private static HashSet<Point> getPointsAroundSourcePoint(Point sourcePoint){
         var targetSet = new HashSet<Point>();
         targetSet.add(new Point(sourcePoint.x(), sourcePoint.y() + 1));
