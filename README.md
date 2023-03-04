@@ -7,4 +7,4 @@
 |4|**[Task4](https://github.com/iamseryy/tasks_learn_java/tree/main/task4)**|Merge sort|
 |5|**[Task5](https://github.com/iamseryy/tasks_learn_java/tree/main/task5)**|Heap sort|
 |6|**[Task6](https://github.com/iamseryy/tasks_learn_java/tree/main/task6)**|Wave routing|
-|7|**[Task6](https://github.com/iamseryy/tasks_learn_java/tree/main/task7)**|Implement wave algorithm using classes|
+|7|**[Task7](https://github.com/iamseryy/tasks_learn_java/tree/main/task7)**|Implement wave algorithm using classes|ы
